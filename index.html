@@ -7,6 +7,25 @@
     <title>Orange Labs Blog | 오렌지랩스</title>
     <meta name="description" content="오렌지랩스 공식 블로그. 엔드포인트 성능 분석 리포트, 기술 인사이트, 회사 소식을 공유합니다." />
     <meta name="keywords" content="오렌지랩스, Orange Labs, Orange Platform, 엔드포인트, 성능 모니터링, 장애 분석" />
+
+    <!--
+      검색 색인 제외 (noindex).
+
+      이 글들은 회사 공식 홈페이지(www.orangelabs.co.kr)의 기술 블로그가 그대로
+      재발행하고 있다. 그런데 github.io의 높은 도메인 신뢰도 때문에 이 사이트가
+      '오렌지랩스' 브랜드 검색 1위를 차지했고, 정작 공식 홈페이지가 그 아래로
+      밀려났다. 사이트는 그대로 두고 검색 노출만 뺀다.
+
+      주의할 점 두 가지 —
+      1. follow는 남긴다. 링크는 계속 따라가게 해서 링크 신호를 죽이지 않는다.
+      2. public/robots.txt는 반드시 Allow로 둔다. 크롤링을 막으면 구글이 이
+         태그 자체를 읽지 못해 오히려 색인에서 빠지지 않는다.
+
+      vite-plugin-seo.js가 이 파일을 템플릿 삼아 글·카테고리 페이지를 찍어내고
+      title·description·og 계열만 치환하므로, 이 한 줄이 프리렌더된 모든
+      페이지에 함께 복사된다.
+    -->
+    <meta name="robots" content="noindex, follow" />
     <meta property="og:title" content="Orange Labs Blog" />
     <meta property="og:description" content="탐지에서 예측까지, 엔드포인트의 모든 것. 오렌지랩스 공식 블로그." />
     <meta property="og:type" content="website" />
